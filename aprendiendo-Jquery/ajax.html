@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Aprendiendo jQuery</title>
+    <!--
+        Con un CDN
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    -->
+
+    <!--Local-->
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript" src="js/05_ajax.js"></script>
+
+    <style>
+        #datos{
+            border: 2px solid green;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Aprendiendo jQuery- AJAX</h1>
+
+    <form action="https://reqres.in/api/users" method="post" id="formulario">
+        Nombre: <input type="text" name="name" class="limpiar">
+        Web: <input type="text" name="web" class="limpiar">
+        <input type="submit" value="registrar" />
+    </form>
+    <br>
+    <div id="datos">
+
+    </div>
+
+</body>
+</html>
